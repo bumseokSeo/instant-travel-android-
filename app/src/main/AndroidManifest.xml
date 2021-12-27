@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sample.login">
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_baseline_airplane_ticket_24"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Login"
+        android:usesCleartextTraffic="true">
+
+        <activity
+            android:name=".SplashActivity2"
+            android:theme="@style/SplashTheme"
+            android:screenOrientation="portrait"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity >
+
+
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"/>
+
+
+        <activity
+            android:name=".MainActivity2"
+            android:exported="true" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"></activity>
+
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="3db9b22705542d4f141c2157a849bb4b" /> /*네이티브앱키 넣으세요   3db9b22705542d4f141c2157a849bb4b   -    우석:a1bc0626786b84b00eefe568fc59cd12   */
+    </application>
+
+</manifest>

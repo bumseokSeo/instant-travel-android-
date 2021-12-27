@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">즉석여행</string>
+    <string-array name = "balloon_list">
+        <item>"경유지 만들기"</item>
+        <item>"경유지에 추가하기"</item>
+        <item>"종료지점으로 설정"</item>
+        <item>"마커 지우기"</item>
+    </string-array>
+</resources>

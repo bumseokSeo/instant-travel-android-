@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="250dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="200dp"
+        android:ems="10"
+        android:hint="이메일을 입력하세요"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_pwd"
+        android:layout_width="241dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="100dp"
+        android:ems="10"
+        android:hint="비밀번호를 입력하세요"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_email"
+        />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="165dp"
+        android:layout_height="62dp"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:fontFamily="@font/my_font"
+        android:text="가입완료"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_go_login"
+        android:layout_width="59dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="350dp"
+        android:backgroundTint="@color/teal_200"
+        android:text=" "
+        app:icon="@android:drawable/ic_menu_revert"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/join"
+        android:layout_width="109dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="166dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="187dp"
+        android:text="회원가입"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.294"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:fontFamily="@font/my_font"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
